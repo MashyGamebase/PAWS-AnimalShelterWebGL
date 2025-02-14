@@ -7,7 +7,7 @@
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=1366 height=768 tabindex="-1" style="width: 1366px; height: 768px; background: #231F20"></canvas>
-    <script src="Build/PAWS-AnimalShelterWebGL.loader.js"></script>
+    <script src="Build/WebBuild2.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -25,9 +25,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/PAWS-AnimalShelterWebGL.data",
-        frameworkUrl: "Build/PAWS-AnimalShelterWebGL.framework.js",
-        codeUrl: "Build/PAWS-AnimalShelterWebGL.wasm",
+        dataUrl: "Build/WebBuild2.data",
+        frameworkUrl: "Build/WebBuild2.framework.js",
+        codeUrl: "Build/WebBuild2.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "PAWS-AnimalShelter",
